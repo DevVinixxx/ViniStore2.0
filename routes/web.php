@@ -32,13 +32,15 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/produto/{id?}/', [ProductController::class, 'show'])->name('product');
 
     Route::get('/carrinho', [ShopController::class, 'cart'])->name('cart');
+
+    Route::get('/dashboard', [ShopController::class, 'dashboard'])->name('dashboard');
+
 });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-//Route::get('/dashboard', [ShopController::class, 'dashboard'])->name('dashboard');
 
 
 require __DIR__.'/auth.php';
