@@ -25,6 +25,7 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
+            <!-- saporra que ta quebrando as views -->
             @include('layouts.navigation')
 
             <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
@@ -93,10 +94,22 @@
                                     <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                                     <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                                 </a>
-                                <a class="nav-icon position-relative text-decoration-none" href="{{Route('dashboard')}}">
-                                    <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-                                </a>
+
+                                <div class="dropdown">
+                                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                                         
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Alguma ação</a>
+                                        <a class="dropdown-item" href="#">Outra ação</a>
+                                        <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+                                      </div>
+                                </div>
+                                
+
+
+                                
                             </div>
                         </div>
             
@@ -205,7 +218,7 @@
             <script src="{{asset('js/slick.min.js')}}"></script>
             <script src="{{asset('js/templatemo.js')}}"></script>
             <script src="{{asset('js/templatemo.min.js')}}"></script>
-            
+
         </div>
     </body>
 </html>
