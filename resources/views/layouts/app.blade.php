@@ -25,8 +25,8 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
-            <!-- saporra que ta quebrando as views -->
-            @include('layouts.navigation')
+            <!-- saporra que ta quebrando as views 
+             @ include('layouts.navigation') -->
 
             <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
                 <div class="container text-light">
