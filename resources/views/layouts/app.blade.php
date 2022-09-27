@@ -90,26 +90,15 @@
                                 <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                                     <i class="fa fa-fw fa-search text-dark mr-2"></i>
                                 </a>
+
                                 <a class="nav-icon position-relative text-decoration-none" href="{{route('cart')}}">
                                     <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                                     <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                                 </a>
 
-                                <div class="dropdown">
-                                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                                         
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Alguma ação</a>
-                                        <a class="dropdown-item" href="#">Outra ação</a>
-                                        <a class="dropdown-item" href="#">Alguma coisa aqui</a>
-                                      </div>
-                                </div>
-                                
-
-
-                                
+                                <a class="nav-icon position-relative text-decoration-none" href="{{route('dashboard')}}">
+                                    <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                                </a>
                             </div>
                         </div>
             

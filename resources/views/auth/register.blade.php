@@ -4,7 +4,7 @@
         <div class="col-md-12 m-4 d-flex justify-content-center">
             <div class="card">
                 <div class="card-header text-center">
-                    <h3 class="mt-1">Registre-se</h3>
+                    <h3 class="mt-1">Criar cadastro</h3>
                     <x-auth-validation-errors :errors="$errors" />
                 </div>
                 <div class="card-body">
@@ -37,7 +37,7 @@
                         </div>
     
                         <div class="flex items-center justify-end mt-2">
-                            <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
+                            <a class="text-decoration-none" href="{{ route('login') }}">
                                 Já tem uma conta?
                             </a>
     
@@ -48,10 +48,6 @@
                     </form>
                 </div>
             </div>
-            
         </div>
-
-
-
     </div>
 @endsection
