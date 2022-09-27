@@ -18,7 +18,6 @@
 
                         <!-- Email Address -->
                         <div class="mt-2">
-
                             <label for="email"> Email </label>
                             <input class="form-control" id="email" type="email" name="email" :value="old('email')"
                                 required />
@@ -34,9 +33,7 @@
                         <!-- Remember Me -->
                         <div class="block mt-4">
                             <label for="remember_me" class="form-check-label">
-                                <input id="remember_me" type="checkbox"
-                                    class="form-check-input"
-                                    name="remember">
+                                <input id="remember_me" type="checkbox" class="form-check-input" name="remember">
                                 <span class="ml-2 text-sm text-gray-600">Manter Login</span>
                             </label>
                         </div>
@@ -46,14 +43,15 @@
                                 <a class="text-decoration-none" href="{{ route('password.request') }}">
                                     Esqueceu sua senha?
                                 </a>
-                            @endif                           
-                
+                            @endif
+
                             <button class="btn btn-success ml-4 m-1">
                                 Entrar
                             </button>
                         </div>
                     </form>
-                   <span>Não tem uma conta? <a href="{{route('register')}}" class="text-decoration-none">Registre-se</a> </span> 
+                    <span>Não tem uma conta? <a href="{{ route('register') }}" class="text-decoration-none">Registre-se</a>
+                    </span>
                 </div>
             </div>
         </div>

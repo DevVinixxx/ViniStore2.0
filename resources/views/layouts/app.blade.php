@@ -67,7 +67,7 @@
                                         <a class="nav-link" href="{{Route('index')}}">Home</a>
                                     </li> 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{Route('products')}}">Shopping</a>
+                                        <a class="nav-link" href="{{Route('products')}}">Produtos</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{Route('about')}}">Sobre Nós</a>
