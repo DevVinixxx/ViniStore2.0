@@ -112,14 +112,14 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         $post = Product::findOrFail($id);
-        if ($request->hasFile("cover")) {
-            if (File::exists("cover/" . $post->cover)) {
-                File::delete("cover/" . $post->cover);
+        if ($request->hasFile("capa")) {
+            if (File::exists("capa/" . $post->capa)) {
+                File::delete("capa/" . $post->capa);
             }
-            $file = $request->file("cover");
-            $post->cover = time() . "_" . $file->getClientOriginalName();
-            $file->move(\public_path("/cover"), $post->cover);
-            $request['cover'] = $post->cover;
+            $file = $request->file("capa");
+            $post->capa = time() . "_" . $file->getClientOriginalName();
+            $file->move(\public_path("/capa"), $post->capa);
+            $request['capa'] = $post->capa;
         }
 
         $post->update([

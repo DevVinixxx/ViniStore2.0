@@ -15,21 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [ShopController::class, 'index'])->name('index');
+
 Route::middleware(['auth'])->group(function(){
     
-    Route::get('/', [ShopController::class, 'index'])->name('index');
-
-    Route::get('/sobre', [ShopController::class, 'about'])->name('about');
-
-    Route::get('/contato', [ShopController::class, 'contact'])->name('contact');
-
-    Route::get('/produtos', [ProductController::class, 'index'])->name('products');
-
     Route::get('/produto/criar',[ProductController::class, 'create'])->name('create');
 
     Route::post('/product/create', [ProductController::class, 'store'])->name('store');
-
-    Route::get('/produto/{id?}/', [ProductController::class, 'show'])->name('product');
 
     Route::get('/carrinho', [ShopController::class, 'cart'])->name('cart');
 
@@ -37,9 +29,16 @@ Route::middleware(['auth'])->group(function(){
 
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+
+
+
+Route::get('/sobre', [ShopController::class, 'about'])->name('about');
+
+Route::get('/contato', [ShopController::class, 'contact'])->name('contact');
+
+Route::get('/produtos', [ProductController::class, 'index'])->name('products');
+
+Route::get('/produto/{id?}/', [ProductController::class, 'show'])->name('product');
 
 
 
