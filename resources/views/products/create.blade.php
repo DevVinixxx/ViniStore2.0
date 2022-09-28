@@ -42,7 +42,7 @@
                             </select>
 
                             <label for="color">Cor</label>
-                            <input type="text" name="color" id="color" class="form-control" placeholder="Cores disponiveis">
+                            <input type="text" name="color" id="color" class="form-control" placeholder="Cor do produto">
 
                             <label for="amount">Valor</label>
                             <input type="number" class="form-control" name="amount" id="amount" placeholder="Preço do produto">
